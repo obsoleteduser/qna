@@ -48,3 +48,8 @@
 .add-modal button:active{
     background-color: darkgreen;
 }
+
+
+.close{
+    display: none;
+}
