@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { addQuestionBox } from "../slices/addQuestionSlice";
 
 
 
-const store = configureStore({
+export const store = configureStore({
     reducer: {
-        
+        addQuestionBox: addQuestionBox
     }
 })

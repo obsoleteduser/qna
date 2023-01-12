@@ -1,15 +1,18 @@
 import React from 'react'
 import './AddQuestion.css'
-import {} from '@reduxjs/toolkit'
+import { useDispatch } from '@reduxjs/toolkit'
 
 export const AddQuestion = () => {
 
-   
+   const dispatch = useDispatch()
+    const hideModal = () =>{
+        
+    }
 
 
 
   return (
-    <div className='add-overlay'>
+    <div onClick={hideModal} className='add-overlay'>
         <div className="add-modal">
             <h1>Ask a question?</h1>
             <input placeholder='Your question' type="text" />
