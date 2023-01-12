@@ -1,0 +1,50 @@
+.add-overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, .7);
+}
+
+.add-modal{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: black;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.add-modal input{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.add-modal button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.add-modal h1{
+    color: white;
+    text-align: center;
+}
+
+
+.add-modal button:active{
+    background-color: darkgreen;
+}
