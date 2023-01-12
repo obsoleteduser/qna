@@ -1,12 +1,15 @@
 import React from 'react'
 import './AddQuestion.css'
-import { useDispatch } from '@reduxjs/toolkit'
+import { useDispatch, useSelector } from 'react-redux'
+import { setActive } from '../RTK/slices/addQuestionSlice'
 
 export const AddQuestion = () => {
 
    const dispatch = useDispatch()
+   const active = useSelector(state => state.addQuestionBox)
     const hideModal = () =>{
-        
+        dispatch(setActive(false))
+        console.log(active)
     }
 
 
