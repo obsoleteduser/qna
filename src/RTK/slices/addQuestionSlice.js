@@ -7,7 +7,7 @@ let initialState = {
 
 
 export const addQuestionBox = createSlice({
-    name: 'addQuestionBox',
+    name: 'questionBox',
     initialState,
     reducers: {
         setActive: (state, action)=>{
