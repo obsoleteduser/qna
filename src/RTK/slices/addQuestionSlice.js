@@ -12,7 +12,7 @@ export const addQuestionBox = createSlice({
     reducers: {
         setActive: (state, action)=>{
             state.active = action.payload
-        }
+        },
     }
 })
 

@@ -11,7 +11,7 @@ export const AddQuestion = () => {
    const active = useSelector(state => state)
 
 
-    const hideModal = () =>{
+    const addQuestion = () =>{
         dispatch(setActive(false))
        dispatch(setQuestion({question: currentQuestion, id: uid()}))
        console.log(active)
@@ -28,7 +28,7 @@ export const AddQuestion = () => {
         <div className="add-modal">
             <h1>Ask a question?</h1>
             <input onChange={inputHandler} placeholder='Your question' type="text" />
-            <button onClick={hideModal} className='add-ask-btn'>Ask</button>
+            <button onClick={addQuestion} className='add-ask-btn'>Ask</button>
         </div>
     </div>
   )
